@@ -1,0 +1,61 @@
+CUANTIFICADORES Y CLASES DE CARACTERES
+Encontrar palabras de al menos 3 letras:
+regex-->\b[a-zA-eiouAEIOUáéíóú]{3,}\b
+
+Prueba: "El perro corre rápido"
+
+Detectar números con al menos 2 dígitos:
+regex-->
+Prueba: "123, 45, 6789"
+
+Identificar palabras que comiencen con una vocal:
+regex-->\b[aeiouAEIOU][a-zA-Záéíóú]*\b
+Prueba: "Análisis de los eventos"
+
+Capturar cadenas de caracteres alfanuméricos de exactamente 5 caracteres:
+regex-->\b[a-zA-Z0-9]{5}\b
+Prueba: "abc12 def34 ghi56 jkl78"
+
+Encontrar direcciones IP (formato simplificado):
+regex-->\b(?:\d{1,3}\.){3}\d{1,3}\b
+Prueba: "La IP es 192.168.1.1 y la otra es 10.0.0.1"
+
+Detectar palabras que contengan una secuencia de exactamente 2 vocales consecutivas:
+regex-->\b\w*[aeiou]{2}\w*\b
+Prueba: "Leer, actuar, reunir"
+
+Encontrar números telefónicos en formato (123) 456-7890:
+regex-->\(\d{3}\) \d{3}-\d{4}
+Prueba: "Mi número es (123) 456-7890"
+
+Identificar palabras que terminen en 'ing':
+regex-->\b\w+ing\b
+Prueba: "I am running and singing"
+
+Detectar palabras con al menos una letra mayúscula:
+regex-->\b\w*[A-Z]\w*\b
+Prueba: "Este es un Texto de Prueba"
+
+Capturar secuencias de uno o más dígitos, seguidas por una letra:
+regex-->\d+[a-zA-Z]
+Prueba: "123a 456b 789c"
+
+Encontrar palabras que contengan solo letras minúsculas:
+regex-->\b[a-z]+\b
+Prueba: "esto es una prueba con minusculas"
+
+Detectar cadenas que contengan al menos una letra mayúscula y al menos un número:
+regex-->(?=.*[A-Z])(?=.*\d)\w+
+Prueba: "Abc123 y XyZ456"
+
+Identificar códigos postales en formato de 5 dígitos:
+regex-->\b\d{5}\b
+Prueba: "Mis códigos son 12345 y 67890"
+
+Capturar secuencias de letras que contengan exactamente 3 letras minúsculas:
+regex-->\b[a-z]{3}\b
+Prueba: "abc def ghi jkl mno"
+
+Encontrar palabras que empiecen con una consonante:
+regex-->\b[^aeiouAEIOU\d\W_]\w*\b
+Prueba: "Casa, elefante, perro, iguana
